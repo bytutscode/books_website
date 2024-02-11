@@ -50,6 +50,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function toggleMenu() {
     var menu = document.getElementById("menu");
-    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    menu.style.right = menu.style.right === '0px' ? '-80vw' : '0px';
+    console.log(menu.style.right)
     document.querySelector('.menu-toggle').classList.toggle('open');
 }
+
+
+function checkImagesLoaded() {
+    const images = document.querySelectorAll('img');
+    let allLoaded = true;
+    images.forEach(function (img) {
+        if (!img.complete) {
+            allLoaded = false;
+        }
+    });
+    return allLoaded;
+}
+
+function showBody() {
+    if (checkImagesLoaded()) {
+        document.querySelector('.spinner-container').style.display = "none";
+
+    } else {
+        setTimeout(showBody, 100);
+    }
+}
+
+// Quando o DOM estiver totalmente carregado
+document.addEventListener("DOMContentLoaded", function () {
+    // Mostra o spinner
+    showBody();
+});
