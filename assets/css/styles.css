@@ -1401,7 +1401,135 @@ footer .copyright {
 }
 
 @media (max-width: 757px) {
+    #blog-html #posts-blog {
+        padding: 1rem;
+    }
+
     #blog-html #posts-blog h1 {
         font-size: 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT.HTML */
+
+#contact-html h1 {
+    color: #181B1F;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 1em;
+    text-align: start;
+    margin-top: 2.5rem !important;
+    margin-bottom: 2.5rem;
+}
+
+#contact-html #contact-container {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+#contact-html #contact-container>* {
+    flex: 1;
+}
+
+#contact-html #contact-container .right-side img {
+    width: 100%;
+}
+
+#contact-html .locale-title {
+    text-align: left;
+    color: #7A7C80;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: -0.14px;
+    margin-bottom: 3rem;
+}
+
+#contact-html #contact-container address {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#contact-html #contact-container address>p {
+    color: #181B1F;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2em;
+    letter-spacing: -0.2px;
+    max-width: 360px;
+}
+
+#contact-html #contact-container address .phone {
+    color: #000;
+    text-decoration: none;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.1em;
+    letter-spacing: -1.4px;
+    transition: all ease-in-out .3s;
+}
+
+#contact-html #contact-container address a:hover {
+    opacity: 0.6;
+}
+
+#contact-html #contact-container address .email {
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2em;
+    letter-spacing: -0.36px;
+    transition: all ease-in-out .3s;
+    color: #000;
+}
+
+
+
+@media (max-width:1024px) {
+    #contact-html h1 {
+        font-size: 70px;
+    }
+
+    #contact-html #contact-container address .phone {
+        font-size: 40px;
+    }
+
+    #contact-html #contact-container address .email {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 757px) {
+    #contact-html #contact-container {
+        flex-direction: column;
+
+    }
+
+    #contact-html #contact-container address>p {
+        max-width: 100%;
+    }
+
+    #contact-html footer {
+        margin-top: 2rem;
     }
 }
