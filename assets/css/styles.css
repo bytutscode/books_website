@@ -1533,3 +1533,152 @@ footer .copyright {
         margin-top: 2rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+/* BOOK.HTML */
+
+#book-html #book {
+    display: flex;
+    gap: 3rem;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+#book-html #book>* {
+    flex: 1;
+}
+
+#book-html #book .left-side img {
+    width: 90%;
+    object-fit: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#book-html #book .right-side {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+#book-html #book h1 {
+    color: #181B1F;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.1em;
+    letter-spacing: -1.4px;
+    margin-top: 0px;
+    text-align: start;
+}
+
+#book-html #book .right-side p {
+    color: #181B1F;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2em;
+    letter-spacing: -0.2px;
+}
+
+#book-html #book .right-side h2 {
+    color: #181B1F;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1em;
+    letter-spacing: -1px;
+}
+
+#book-html #book .right-side h3 {
+    color: #181B1F;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1em;
+    letter-spacing: -0.72px;
+}
+
+#book-html #book ul {
+    padding-left: 2rem;
+}
+
+#book-html #book ul li {
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: -0.2px;
+    display: flex;
+    align-items: center;
+}
+
+#book-html #book ul li:before {
+    content: "\2022";
+    color: #000;
+    font-size: 50px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+#book-html #books {
+    padding-bottom: 0px;
+}
+
+#book-html #books .sentence h2 {
+    margin: auto;
+    text-align: center;
+}
+
+#book-html footer {
+    margin-top: 1rem;
+}
+
+
+
+
+
+@media (max-width:1024px) {
+    #book-html #book .left-side img {
+        width: 100%;
+    }
+
+    #book-html #book h1 {
+        font-size: 40px;
+    }
+
+    #book-html #book .right-side h2 {
+        font-size: 30px;
+    }
+
+    #book-html #book .right-side {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 757px) {
+    #book-html #book {
+        flex-direction: column;
+    }
+
+    #book-html #book {
+        font-size: 35px;
+    }
+
+    #book-html #book .right-side h2 {
+        font-size: 35px;
+    }
+
+    #book-html #books .sentence h2 {
+        width: 100%;
+    }
+}
