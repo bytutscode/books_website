@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const slidesToShow = screenWidth < 1024 ? 3 : 6;
 
     swiper1 = new Swiper('.books-container', {
-        slidesPerView: slidesToShow, // Mostrar 6 slides por vez
-        spaceBetween: 30, // Espaço entre os slides
+        slidesPerView: slidesToShow,
+        spaceBetween: 30,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -24,12 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const sentencesCarousel = document.getElementById('sentences-carousel');
     if (sentencesCarousel) {
         swiper2 = new Swiper('#sentences-carousel', {
-            slidesPerView: 1, // Mostrar apenas 1 slide por vez
-            spaceBetween: 30, // Espaço entre os slides
-            loop: true, // Ativar o loop do slider
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
             autoplay: {
-                delay: 5000, // Tempo de intervalo entre os slides em milissegundos (5 segundos neste caso)
-                disableOnInteraction: false, // Continuar o autoplay mesmo se o usuário interagir com o slider
+                delay: 5000,
+                disableOnInteraction: false,
             }
         });
     }
@@ -76,8 +76,7 @@ function showBody() {
     }
 }
 
-// Quando o DOM estiver totalmente carregado
 document.addEventListener("DOMContentLoaded", function () {
-    // Mostra o spinner
+
     showBody();
 });
