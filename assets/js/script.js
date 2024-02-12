@@ -3,10 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const screenWidth = window.innerWidth;
     const slidesToShow = screenWidth < 1024 ? 3 : 6;
+    const spaceBetween = screenWidth < 1024 ? 10 : 30;
 
     swiper1 = new Swiper('.books-container', {
         slidesPerView: slidesToShow,
-        spaceBetween: 30,
+        spaceBetween: spaceBetween,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
