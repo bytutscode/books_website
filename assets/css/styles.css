@@ -56,6 +56,10 @@ header nav a:hover {
     color: black;
 }
 
+header nav a.active {
+    color: black;
+}
+
 h1 {
     color: #181B1F;
     font-family: "Josefin Sans", Sans-serif;
@@ -1495,7 +1499,7 @@ footer .copyright {
 
 #contact-html #contact-container address .email {
     font-family: "Josefin Sans", Sans-serif;
-    font-size: 20px;
+    font-size: 27px;
     font-weight: 300;
     line-height: 1.2em;
     letter-spacing: -0.36px;
